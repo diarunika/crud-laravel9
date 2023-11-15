@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MasjidController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+route::resource('masjid', MasjidController::class);
